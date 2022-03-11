@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подбор квартир</title>
+</head>
+<body>
+    <form action="#" method="post" name="find-house">
+        <label for="district">Выберите район</label>
+        <select name="district" id="district">
+
+            <optgroup label="Санкт Петербург">
+
+                <option value="0" selected>Не выбрано</option>
+                <option value="1" >Адмиралтейский район</option>
+                <option value="2" >Василеостровский район</option>
+                <option value="3" >Выборгский район</option>
+
+            </optgroup>
+            <optgroup label="Лен.Область">
+
+                <option value="4" >Всеволожский район</option>
+                <option value="5" >Бокситогорский район</option>
+                <option value="6" >Лодейнопольский район</option>
+
+            </optgroup>
+
+        </select>    
+
+        <label for="underground">Выберите метро</label>
+        <select name="underground" id="underground">
+
+            <optgroup label="Метро" >
+
+                <option value="0" selected>Не выбрано</option>
+                <option value="1" >Девяткино</option>
+                <option value="2" >Гражданский проспект</option>
+                <option value="3" >Невский проспект</option>
+                <option value="4" >Гостиный двор</option>
+                <option value="5" >Петроградская</option>
+                <option value="6" >Чёрная речка</option>
+
+            </optgroup>    
+
+
+        </select>
+
+        <fieldset >
+            <legend>Количество комнат</legend>
+            
+            <label>
+                Студия
+                <input type="checkbox" name="room[]" value="1">
+            </label>
+            <label>
+                1 комнатная
+                <input type="checkbox" name="room[]" value="2">
+            </label>
+            <label>
+                2 комнатная
+                <input type="checkbox" name="room[]" value="3">
+            </label>
+            <label>
+                3 комнатная
+                <input type="checkbox" name="room[]" value="4">
+            </label>
+
+            <!-- Можно выбрать комнаты еще в таком варианте
+                
+                <div>
+    		<label for="room">Количесво комнат</label>
+    		<select id="room" name="room">
+                <option value="0" selected>Не выбрано</option>
+    			<option value="1" >Студия</option>
+    			<option value="2">1 комната</option>
+    			<option value="3">2 комнаты</option>
+    			<option value="4">3 комнаты</option>
+    		</select>
+    	</div> -->
+
+        </fieldset>
+
+        <label for="year">Год сдачи дома</label>
+        <select name="year" id="year">
+            <optgroup label="Год сдачи дома">
+                <option value="0" selected>Не выбрано</option>
+                <option value="1" >2017</option>
+                <option value="2" >2018</option>
+                <option value="3" >2019</option>
+                <option value="4" >2020</option>
+                <option value="5" >2021</option>
+                <option value="6" >2022</option>
+            </optgroup>
+           
+        </select>
+
+        <div>
+            <label for="highprice" >Укажите максимальную стоимость квартиры</label>
+            <input id="highprice" type="number" min="0" max="10000000" name="highprice"> 
+        </div>
+
+        <div>
+            <label for="totalarea" >Укажите общую площадь</label>
+            <input id="totalarea" type="number" min="0" max="100" name="totalarea" value="100" > 
+        </div>
+
+        <fieldset>
+            <legend>Наличие отделки</legend> 
+            <label>
+                Да:
+                <input type="radio" name="finishing" value="yes"> 
+            </label>
+            <label>
+                Нет:
+                <input type="radio" name="finishing" value="no"> 
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Наличие террассы</legend> 
+            <label>
+                Да:
+                <input type="radio" name="terrace" value="yes"> 
+            </label>
+            <label>
+                Нет:
+                <input type="radio" name="terrace" value="no"> 
+            </label>
+        </fieldset>
+
+        <fieldset >
+            <legend>Класс жилья</legend>
+            
+            <label>
+                Бизнес-класс
+                <input type="checkbox" name="houseclass[]" value="1">
+            </label>
+            <label>
+                Премиум
+                <input type="checkbox" name="houseclass[]" value="2">
+            </label>
+            <label>
+                Комфорт
+                <input type="checkbox" name="houseclass[]" value="3">
+            </label>
+            <label>
+                Эконом
+                <input type="checkbox" name="houseclass[]" value="4">
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend><p>Выберите предпочитаемый этаж</p></legend>
+            <div> От <input type="number" name="of" min="0" max="24" ></div>
+            <div> До <input type="number" name="to" min="0" max="24" ></div>
+                <label>
+                    Не первый
+                    <input type="checkbox" name="floor[]" value="not first">
+                </label>
+                <label>
+                    Не последний
+                    <input type="checkbox" name="floor[]" value="not last">
+                </label>
+        </fieldset>
+
+            <div>
+                <input type="submit"> 
+                <input type="reset"> 
+            </div>
+
+    </form>
+</body>
+</html>
