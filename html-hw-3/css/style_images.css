@@ -10,8 +10,8 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     background-color: #FFF176;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .item {
@@ -20,11 +20,26 @@ h1 {
     object-fit: cover;
 
 }
-span {
+a { 
+    color: #000000;
     text-transform: capitalize;
     font-weight: 700; 
 }
 .river {
-    width: 329px;
-    height:200px;
+    width: 33%;
+    height: auto;
+    filter: opacity(25%);
+}
+.tol {
+    width: 33%;
+    height: auto;
+    filter: opacity(50%);
+}
+.toll {
+    width: 33%;
+    height: auto;
+    filter: opacity(90%);
+}
+.block img {
+    display: inline-block;
 }
