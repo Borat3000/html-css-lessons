@@ -20,5 +20,7 @@ a {
 }
 /* ниже попробовал сделать нижнее подчеркивание при наведении на ссылку (надеюсь верно) */
 ul >li a:hover {
-    border-bottom: 3px solid #BF360C; 
+    border-bottom: 3px solid #BF360C;
+    padding-left: 10px;
+    padding-right: 10px;
 }
