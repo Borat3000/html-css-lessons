@@ -1,0 +1,24 @@
+div > h2 {
+    text-transform: uppercase;
+    text-align: center
+}
+.upp_text {
+    color: #F44336;
+    text-transform: uppercase ;
+    font-weight: 700; 
+    /* Добавил жирный шрифт, по картинке не ясно надо или нет,
+     и не ясно надо было шрифт всего текста менять или нет*/
+}
+.line_text {
+    text-decoration: line-through;
+    text-decoration-color: #F44336;
+}
+a {
+    color: #F44336;
+    text-decoration-line: none;
+}
+.fat_text {
+    color: #F44336;
+    text-transform: capitalize;
+    font-weight: 700; 
+}

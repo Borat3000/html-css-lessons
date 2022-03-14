@@ -1,0 +1,24 @@
+ul {
+    background-color: #FFA000;
+    padding-left: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul > li {
+    display: inline-block;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    width: 75px;
+    text-align: center;
+}
+ul > li > ul {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: #E65100;
+}
+/* ниже попробовал сделать нижнее подчеркивание при наведении на ссылку (надеюсь верно) */
+ul >li a:hover {
+    border-bottom: 3px solid #BF360C; 
+}
