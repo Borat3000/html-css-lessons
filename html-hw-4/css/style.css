@@ -1,4 +1,5 @@
 @import url(flex-grid.css);
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -8,10 +9,12 @@ body{
     margin: 0;
     font-size: 20px;
 }
+
 .logo {
     color: black;
     font-size: 10px;
 }
+
 .menu {
     background-color: #607D8B;
     padding: 10px 0px;
@@ -51,6 +54,7 @@ section > div {
     text-transform: uppercase;
     text-decoration: none;
 }
+
 .category {
         text-align: left;
         background-color: #607D8B;
@@ -66,7 +70,12 @@ section > div {
 section {
     margin: 5px; /* отступы */
 }
-.flex-end {
+
+.cost {
+    margin-top: auto;
+}
+
+.card {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
 }
