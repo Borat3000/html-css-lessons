@@ -1,0 +1,24 @@
+@import "flex-grid.css"; /* импорт содержимого css файла в текущую таблицу */
+
+.container {
+  max-width: 1200px; /* максимальная ширина  */
+  margin: 0 auto; /* отступ от каждого края элемента, auto указывает что размер отступов будет автоматически расчитан браузером */
+}
+
+nav > a {
+  text-decoration: none; /* стиль шрифта */
+  color: #212121; /* цвет текста */
+  width: 100%; /* ширина кнопки */
+  padding: 10px 10px; /* отступы сверху и снизу */
+  display: flex;
+  justify-content: center; /* выравнивание элементов по центру */
+}
+
+a:hover {
+  background-color: #78909C; /* показывает стиль элемента при наведении мыши, не нажав на него */
+}
+
+header > nav {
+    justify-content: center;
+    align-items: center;
+  }

@@ -23,11 +23,13 @@ body{
 }
 
 aside  {
-    background-color: #607D8B;
+    background-color: #E0E0E0;
 }
 
 .margin-left {
     margin-left: auto;
+    padding-right: 20px;
+    padding-top: 15px;
 }
 
 footer {
@@ -54,4 +56,17 @@ section > div {
         background-color: #607D8B;
         color: black;
         padding: 10px;
+}
+
+.nav a {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+section {
+    margin: 5px; /* отступы */
+}
+.flex-end {
+    display: flex;
+    align-items: flex-end;
 }
