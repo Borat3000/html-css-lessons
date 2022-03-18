@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 ul {
     background-color: #FFA000;
     padding-left: 0;
@@ -6,10 +9,11 @@ ul {
 }
 ul > li {
     display: inline-block;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-    width: 75px;
-    text-align: center;
+    border-bottom: 3px solid transparent; /* чтобы менялась рамка корректно то надо делать рамку не только в ховере но и элементу (рамку делать с цветом родителя)*/
+    /* width: 75px;
+    text-align: center; */
+    padding-left: 10px;
+    padding-right: 10px;
 }
 ul > li > ul {
     display: none;
@@ -19,7 +23,8 @@ a {
     color: #E65100;
 }
 /* ниже попробовал сделать нижнее подчеркивание при наведении на ссылку (надеюсь верно) */
-ul >li a:hover {
+
+ul >li:hover { /* если рамка изначально y li, значит и наведение отслеживаем y li */
     border-bottom: 3px solid #BF360C;
     padding-left: 10px;
     padding-right: 10px;

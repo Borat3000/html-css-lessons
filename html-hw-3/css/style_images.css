@@ -25,20 +25,18 @@ a {
     text-transform: capitalize;
     font-weight: 700; 
 }
-.river {
+img {
     width: 33%;
     height: auto;
-    filter: opacity(25%);
+}
+.river {
+    opacity: 0.2;
 }
 .tol {
-    width: 33%;
-    height: auto;
-    filter: opacity(50%);
+    opacity: 0.5;
 }
 .toll {
-    width: 33%;
-    height: auto;
-    filter: opacity(90%);
+    opacity: 0.9;;
 }
 .block img {
     display: inline-block;
