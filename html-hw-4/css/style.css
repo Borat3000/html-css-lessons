@@ -1,0 +1,57 @@
+@import url(flex-grid.css);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    font-size: 20px;
+}
+.logo {
+    color: black;
+    font-size: 10px;
+}
+.menu {
+    background-color: #607D8B;
+    padding: 10px 0px;
+}
+
+.justify-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside  {
+    background-color: #607D8B;
+}
+
+.margin-left {
+    margin-left: auto;
+}
+
+footer {
+    text-align: left;
+    background-color: #607D8B;
+    color: black;
+    padding: 10px;
+}
+
+section > div {
+    background-color: #BDBDBD;
+    border: 5px solid white;
+    padding: 5px;
+}
+
+.nav > a , footer {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.category {
+        text-align: left;
+        background-color: #607D8B;
+        color: black;
+        padding: 10px;
+}
