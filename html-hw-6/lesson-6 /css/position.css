@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; /*  */
+    font-size: 20px; /*размер текста*/
+}
+
+img {
+    width: 100%; /* ширина по отношению к родителю */
+    height: 300px; /* высота изображения */
+    object-fit: cover; /* убирает искажение изображения */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* отступы сверху и снизу 0 и по бокам авто*/
+}
+
+.flex-row {
+    display: flex; /* по умолчанию уже derection-row поэтому можно не писать*/
+    justify-content: space-between; /* флекс элементы равномерно распределяются по линии (первый и последний флекс элемент по краям , а остальные распределяются  так чтобы расстояние между соседними элементами было одинаковым */
+    align-items: center; /* выравнивание всех элемнтов флекс контейнера, центер- центрируется по поперечной оси  */
+}
+
+header {
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;  /* выводит на передний план*/
+
+}
+header a {
+    color: #1deb49;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding: 15px 30px; /* 15 сверху снизу, 30 по бокам*/
+    display:inline-block /*чтобы норм отображалась ссылка добавить display: inline block*/
+    
+}
+
+header a:hover {
+    border-bottom: 3px solid rgb(64, 114, 60);
+}
+
+input {
+    border: 2px solid #033b14;
+}
+
+.carousel {
+    margin-top: 110px;
+}
+
+.carousel div {
+    display: none;
+}
+
+.carousel div.active {
+    display: block;
+}
+
+.carousel img {
+    display: block; /* убирает отступ */
+}
+
+.carousel div {
+    position: relative;
+}
+.carousel span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: black;
+    background-color: #1976D2;
+    padding: 10px 20px;
+}
+.margin-bottom20 {
+    margin-bottom: 20px; /* добавляет отступ снизу */
+}
+
+.up-button {
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background-color: red;
+    color: black;
+    border-radius: 50%; 
+    line-height: 60px; /* используется для опуска текста*/
+    /* padding: 40px; */ 
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    color: #1976D2;
+}
+
+main article {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rebeccapurple; 
+    background-color: #1976D2;
+    padding: 15px; /* отступы */
+
+}
+
+main article:nth-child(4) {
+    grid-column: 1 / 3;
+    display: flex;
+    
+}
+main article:nth-child(4) img { /* задали ширину и высоту изображению */
+    height: 100%;
+    width: 33%;
+}
+
+article h2 {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 15px; /* Положение от верхнего края */
+    left: 15px; /* Положение от левого края */
+    color: #033b14;
+    background-color: #1deb49;
+    padding: 10px 20px;
+
+}
+
+article {
+    position: relative;
+    display: inline-block; /* Это значение генерирует блочный элемент, который обтекается другими элементами веб-страницы подобно встроенному элементу. */
+}
+
+button {
+    text-align: center;
+    text-decoration: none;
+    color: aqua;
+    background-color: cadetblue;
+    font-weight: bold; /* Устанавливает насыщенность шрифта.  bold — полужирное начертание,*/
+    font-size: 20px; /* размер шрифта */
+    
+}

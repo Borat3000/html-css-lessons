@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-size: 20px;
+}
+.top-menu {
+    background-color: #BF360C;
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*  */
+    margin: 0;
+}
+li a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding: 15px 80px; /* отступы */
+}
+
+.top-menu li a:hover { /* если рамка изначально y li, значит и наведение отслеживаем y li */
+    border-bottom: 3px solid #BF360C;
+    list-style-type: none; 
+}
+.top-menu .sub-menu {
+    display: none;
+}
+
+.top-menu {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+.sub-menu {
+    position: absolute;
+    display: none;
+    background-color: #E65100;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.top-menu li:hover .sub-menu {
+    display: block;
+    justify-content: center;
+}
+.sub-menu li a {
+    color: cadetblue;
+    display: block;
+    text-decoration: none;
+    padding: 15px 75px;
+    border-bottom: 3px solid transparent;
+
+
+}
