@@ -34,12 +34,12 @@ li a {
 }
 .sub-menu {
     position: absolute;
-    display: none;
+    display: none; /* Элемент показывается как блочный. */
     background-color: #E65100;
-    top: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    /* top: 100%; Pасстояние от верхнего края родительского элемента до верхнего края дочернего элемента */
+    padding: 0; /* Устанавливает значение полей вокруг содержимого элемента */
+    margin: 0; /* Устанавливает величину отступа от каждого края элемента */
+    list-style-type: none; /* Отменяет маркеры для списка. */
 }
 .top-menu li:hover .sub-menu {
     display: block;
@@ -47,7 +47,6 @@ li a {
 }
 .sub-menu li a {
     color: cadetblue;
-    display: block;
     text-decoration: none;
     padding: 15px 75px;
     border-bottom: 3px solid transparent;
