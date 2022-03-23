@@ -119,6 +119,10 @@ input[type=submit] {
     width: 253px;
 }
 
+label[for=remember] {
+    font-size: 15px;
+    color: aliceblue;
+}
 
 /* убирает глаз в вводе пароля */
 input::-ms-reveal,
