@@ -96,26 +96,13 @@ li a {
     text-decoration: none;
 }
 
-.pers-acc-body form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.pers-acc-body form input {
-    width: 90%;
-    font-size: 20px;
-    margin-bottom: 20px;
-    height: 30px;
-}
-
 input[type=password] {
     border-style: none;
     outline-style: none;
     border-bottom: 2px solid #a59f9f; /*цвет рамки (солид) сплошная*/
     background-color: transparent;
     width: 250px;
+
 }
 
 input[type=text] {
@@ -129,12 +116,25 @@ input[type=text] {
 input[type=submit] {
     border-style: none;
     outline-style: none;
-    width: 250px;
+    width: 253px;
 }
 
+
+/* убирает глаз в вводе пароля */
 input::-ms-reveal,
-input::-ms-clear { /* убирает глаз в вводе пароля */
+input::-ms-clear { 
+    display: none;
+}
+/* стилизация галочки  */
+#remember {
     display: none;
 }
 
+label::before {
+    content: "☑"
+}
 
+#remember:checked + label::before {
+    content: "☑";
+    color: rgb(43, 255, 0);
+}
