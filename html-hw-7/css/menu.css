@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-size: 20px;
+}
+.top-menu {
+    background-color: #BF360C;
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*  */
+    margin: 0;
+}
+li a {
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding: 15px 80px; /* отступы */
+}
+
+.top-menu li a:hover { /* если рамка изначально y li, значит и наведение отслеживаем y li */
+    border-bottom: 3px solid #BF360C;
+    list-style-type: none; 
+}
+.top-menu .sub-menu {
+    display: none;
+}
+
+.top-menu {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+}
+.sub-menu {
+    position: absolute;
+    display: none; /* Элемент показывается как блочный. */
+    background-color: #E65100;
+    /* top: 100%; Pасстояние от верхнего края родительского элемента до верхнего края дочернего элемента */
+    padding: 0; /* Устанавливает значение полей вокруг содержимого элемента */
+    margin: 0; /* Устанавливает величину отступа от каждого края элемента */
+    list-style-type: none; /* Отменяет маркеры для списка. */
+}
+.top-menu li:hover .sub-menu {
+    display: block;
+    justify-content: center;
+}
+.sub-menu li a {
+    color: cadetblue;
+    text-decoration: none;
+    padding: 15px 75px;
+    border-bottom: 3px solid transparent;
+}
+
+.pers-acc {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0; 
+    display: none;  
+}
+
+.pers-acc:target {
+    display: block;   
+}
+
+.pers-acc-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    
+}
+
+.pers-acc-content {
+    background-color: #795548;
+    color: black;
+    max-width: 300px;
+    padding: 50px; /* внутренние отступы */
+    position: relative;
+    text-align: left;
+    border-radius: 10px;
+    display: block;
+    flex-direction: column;
+}
+
+.pers-acc-close {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+    font-size: 20px;
+    color: rgb(250, 248, 248);
+    text-decoration: none;
+}
+
+.pers-acc-body form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pers-acc-body form input {
+    width: 90%;
+    font-size: 20px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+input[type=password] {
+    border-style: none;
+    outline-style: none;
+    border-bottom: 2px solid #a59f9f; /*цвет рамки (солид) сплошная*/
+    background-color: transparent;
+    width: 250px;
+}
+
+input[type=text] {
+    border-style: none;
+    outline-style: none;
+    border-bottom: 2px solid #a59f9f; /*цвет рамки (солид) сплошная*/
+    background-color: transparent;
+    width: 250px;
+    
+}
+input[type=submit] {
+    border-style: none;
+    outline-style: none;
+    width: 250px;
+}
+
+input::-ms-reveal,
+input::-ms-clear { /* убирает глаз в вводе пароля */
+    display: none;
+}
+
+
