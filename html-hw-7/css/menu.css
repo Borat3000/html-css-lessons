@@ -78,7 +78,7 @@ li a {
 .pers-acc-content {
     background-color: #795548;
     color: black;
-    max-width: 300px;
+    max-width: 250px;
     padding: 50px; /* внутренние отступы */
     position: relative;
     text-align: left;
@@ -89,8 +89,8 @@ li a {
 
 .pers-acc-close {
     position: absolute;
-    right: 15px;
-    top: 9px;
+    right: 14px;
+    top: 7px;
     font-size: 20px;
     color: rgb(250, 248, 248);
     text-decoration: none;
