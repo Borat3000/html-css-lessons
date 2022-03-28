@@ -1,0 +1,145 @@
+@import url(flex-grid.css);
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    font-size: 20px;
+}
+
+.logo {
+    color: black;
+    font-size: 10px;
+}
+
+.menu {
+    background-color: #607D8B;
+    padding: 10px 0px;
+}
+
+.justify-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+aside  {
+    background-color: #E0E0E0;
+}
+
+.margin-left {
+    margin-left: auto;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+footer {
+    text-align: left;
+    background-color: #607D8B;
+    color: black;
+    padding: 10px;
+}
+
+section > div {
+    background-color: #BDBDBD;
+    border: 5px solid white;
+    padding: 5px;
+}
+
+.nav > a , footer {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav a {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+section {
+    margin: 5px; /* отступы */
+}
+
+.cost {
+    margin-top: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-menu {
+    display: none;
+}
+
+.categories-link {
+    color: rgb(227, 242, 253);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.categories-link:hover {
+    border-color: rgb(227, 242, 253);
+}
+
+
+/* xs */
+@media screen and (max-width: 539px) {
+
+    .not_display {
+        display: none;
+    }
+
+    .text-menu {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        text-transform: uppercase;
+        background-color: #BDBDBD;
+        color: black;
+    }
+
+    .categories {
+        display: none;
+    }
+
+    .text-menu:hover + .categories {
+        display: block;
+    }
+   
+
+}
+
+/* sm */
+@media screen and (min-width: 540px) and (max-width: 767px) {
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* md */
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    
+}
