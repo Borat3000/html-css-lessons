@@ -77,6 +77,10 @@ section {
     display: none;
 }
 
+.bl-menu {
+    display: none;
+}
+
 .categories-link {
     color: rgb(227, 242, 253);
     text-decoration: none;
@@ -108,6 +112,15 @@ section {
         color: black;
     }
 
+    .bl-menu {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        text-transform: uppercase;
+        background-color: #607D8B;
+        color: black;
+    }
+
     .categories {
         display: none;
     }
@@ -115,7 +128,13 @@ section {
     .text-menu:hover + .categories {
         display: block;
     }
-   
+
+    .bl-menu:hover + .categories {
+        display: block;
+    }
+
+
+
 
 }
 
@@ -127,6 +146,12 @@ section {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .order {
+        order: -1;
+    }
+
+
 }
 
 /* md */
@@ -136,6 +161,10 @@ section {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .order {
+        order: -1;
     }
 }
 
