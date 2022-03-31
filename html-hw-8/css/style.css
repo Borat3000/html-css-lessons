@@ -112,6 +112,12 @@ section {
         color: black;
     }
 
+    .flex-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .bl-menu {
         display: flex;
         justify-content: center;
